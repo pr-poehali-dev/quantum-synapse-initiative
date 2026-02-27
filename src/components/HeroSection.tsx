@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const images = [
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-2.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-1.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-4.jpg',
-  'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
+  'https://cdn.poehali.dev/projects/1375def8-7ccc-40b9-a436-f8d5b61e4570/files/90edf673-8517-4253-a0d0-dc7d5ebb7c1e.jpg',
+  'https://cdn.poehali.dev/projects/1375def8-7ccc-40b9-a436-f8d5b61e4570/files/1c5c6f1f-bbc9-4048-94c7-f19a79f3909e.jpg',
+  'https://cdn.poehali.dev/projects/1375def8-7ccc-40b9-a436-f8d5b61e4570/files/7ab48801-ac6b-4e98-860a-8ae4236daf87.jpg',
+  'https://cdn.poehali.dev/projects/1375def8-7ccc-40b9-a436-f8d5b61e4570/files/0794edba-1de7-46d4-8071-54f87b188784.jpg',
 ];
 
 export default function HeroSection() {
@@ -54,11 +54,9 @@ export default function HeroSection() {
               )}
             >
               <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
-                <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Креативный специалист"
-                  className="h-full w-full object-cover"
-                />
+                <div className="h-full w-full bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center">
+                  <span className="text-white text-5xl font-bold md:text-7xl">ВФ</span>
+                </div>
               </div>
             </div>
 
@@ -70,10 +68,10 @@ export default function HeroSection() {
             >
               <div className="space-y-4">
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Алексей Иванов
+                  Филиппов Виктор Федорович
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Креативный директор | Дизайнер
+                  Директор | Строительные работы
                 </p>
                 <div className="flex gap-6 pt-4">
                   <a
